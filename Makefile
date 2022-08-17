@@ -1,0 +1,2 @@
+mlir: mlir.c
+	CC $< -o mlir -g -L/usr/local/Cellar/llvm/14.0.6_1/lib `llvm-config --cflags --system-libs --libs all` -lMLIR -lMLIRCAPIDebug -lMLIRCAPIStandard -lMLIRCAPIRegistration -lMLIRCAPIIR -lMLIRCAPILLVM -lMLIRCAPIExecutionEngine -lMLIRExecutionEngine -lmlir_c_runner_utils -lz -lncurses -lc++abi -lc++
